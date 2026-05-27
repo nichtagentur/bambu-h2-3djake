@@ -92,16 +92,18 @@ h1.title .stamp::before{content:"SOMMER";position:absolute;top:-12px;left:14px;f
 .countdown small{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#666}
 
 /* --- Hero printer photo --- */
-.printer-stage{position:relative;aspect-ratio:4/5;max-width:560px;justify-self:end;width:100%}
-.printer-stage::before{content:"";position:absolute;left:50%;bottom:2%;width:78%;height:36px;transform:translateX(-50%);background:radial-gradient(ellipse, rgba(18,84,103,.22), transparent 70%);filter:blur(4px);z-index:0}
-.printer-stage .hero-img{position:relative;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 18px 30px rgba(18,84,103,.18));animation:floaty 6s ease-in-out infinite;z-index:1}
+.printer-stage{position:relative;aspect-ratio:1/1;max-width:540px;justify-self:end;width:100%;border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(18,84,103,.35),0 12px 30px -12px rgba(0,0,0,.25)}
+.printer-stage::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg, rgba(6,164,172,.12) 0%, transparent 35%, rgba(242,149,10,.08) 100%);z-index:2;pointer-events:none}
+.printer-stage .hero-img{position:relative;width:100%;height:100%;object-fit:cover;display:block;z-index:1;animation:floaty 7s ease-in-out infinite}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-.printer-stage::after{content:"H2D";position:absolute;top:8%;right:-2%;font-family:"Fraunces",serif;font-style:italic;font-weight:300;font-size:160px;color:rgba(6,164,172,.12);letter-spacing:-0.06em;line-height:1;pointer-events:none;z-index:0}
-.spec-pin{position:absolute;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--teal-deep);background:#fff;border:1px solid rgba(18,84,103,.2);padding:6px 9px;border-radius:6px;white-space:nowrap;animation:bobUp .8s ease-out backwards;z-index:2}
+/* H2D backdrop removed — hero photo carries it */
+.spec-pin{position:absolute;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--teal-deep);background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border:1px solid rgba(18,84,103,.18);padding:7px 10px;border-radius:6px;white-space:nowrap;animation:bobUp .8s ease-out backwards;z-index:3;box-shadow:0 4px 14px rgba(0,0,0,.18)}
 .spec-pin::before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--orange);border:2px solid #fff;box-shadow:0 0 0 1px var(--orange)}
-.spec-pin.p1{top:6%;left:-2%;animation-delay:.4s}.spec-pin.p1::before{left:-22px;top:8px}
-.spec-pin.p2{top:46%;right:-2%;animation-delay:.55s}.spec-pin.p2::before{right:-22px;top:8px}
-.spec-pin.p3{bottom:14%;left:-4%;animation-delay:.7s}.spec-pin.p3::before{left:-22px;top:8px}
+.spec-pin.p1{top:14px;left:14px;animation-delay:.4s}
+.spec-pin.p2{top:50%;right:14px;animation-delay:.55s;transform:translateY(-50%)}
+.spec-pin.p2.in{transform:translateY(-50%)}
+.spec-pin.p3{bottom:14px;left:14px;animation-delay:.7s}
+.spec-pin::before{display:none}
 .spec-pin b{color:var(--ink)}
 @keyframes bobUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
@@ -291,7 +293,7 @@ html.no-js [data-reveal], body.force-show [data-reveal]{opacity:1;transform:none
     </div>
 
     <div class="printer-stage" data-reveal>
-      <img class="hero-img" src="assets/h2d_2.png" alt="Bambu Lab H2D 3D-Drucker mit AMS 2 Pro" />
+      <img class="hero-img" src="assets/hero_cinematic.png" alt="Bambu Lab H2D im niceshops Workshop, druckt ein orangenes Smiley" />
       <svg style="display:none" viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bambu Lab H2 Stilisierung">
         <defs>
           <linearGradient id="bodyG" x1="0" x2="0" y1="0" y2="1">
@@ -401,6 +403,32 @@ html.no-js [data-reveal], body.force-show [data-reveal]{opacity:1;transform:none
   </div>
 </section>
 
+<!-- 4a. Lifestyle banner -->
+<section class="lifestyle" aria-label="Maker im niceshops Workshop">
+  <div class="lifestyle-img"><img src="assets/lifestyle_maker.png" alt="Maker hält frisch gedrucktes orangenes Smiley aus dem H2D"></div>
+  <div class="lifestyle-overlay">
+    <div class="wrap">
+      <span class="eyebrow"><span class="pulse"></span> Made by Makers · seit 2007 in Saaz</span>
+      <h3>Aus der niceshops Werkstatt &nbsp;<i>auf deinen Tisch.</i></h3>
+      <p>Jeder H2D, der bei dir ankommt, lief zuvor durch unser Logistikzentrum in Saaz — geprüft, registriert, mit deutscher Anleitung und 3DJake Profil-Bibliothek vorbereitet. Versand am selben Werktag bis 14:00.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.lifestyle{position:relative;overflow:hidden;min-height:520px;display:grid;grid-template-columns:1fr 1fr;background:#0e1a1d;color:var(--paper)}
+.lifestyle-img{position:relative;height:100%}
+.lifestyle-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lifestyle-overlay{display:flex;align-items:center;padding:80px 0;background:linear-gradient(135deg, var(--teal-deep) 0%, #0a2a35 100%);position:relative}
+.lifestyle-overlay::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%, rgba(242,149,10,.25), transparent 50%);pointer-events:none}
+.lifestyle-overlay .wrap{padding-left:64px;padding-right:32px;max-width:560px;position:relative}
+.lifestyle-overlay .eyebrow{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:#cfe8ea}
+.lifestyle-overlay h3{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(34px,4.5vw,56px);margin:20px 0 16px;line-height:1.02;letter-spacing:-0.025em}
+.lifestyle-overlay h3 i{font-style:italic;color:var(--orange)}
+.lifestyle-overlay p{font-size:16px;line-height:1.6;color:rgba(246,244,238,.85);max-width:46ch}
+@media(max-width:900px){.lifestyle{grid-template-columns:1fr;min-height:auto}.lifestyle-img{min-height:300px}.lifestyle-overlay .wrap{padding:0 24px}}
+</style>
+
 <!-- 4b. Family lineup with real photo -->
 <section class="lineup">
   <div class="wrap">
@@ -427,7 +455,7 @@ html.no-js [data-reveal], body.force-show [data-reveal]{opacity:1;transform:none
 
     <div class="compare">
       <div class="card h2d" data-reveal>
-        <div class="photo"><img src="assets/h2d_4.png" alt="H2D Dual-Nozzle Hotend"></div>
+        <div class="photo"><img src="assets/detail_dual_nozzle.png" alt="H2D Dual-Nozzle Macro Shot"></div>
         <span class="tag">Multimaterial · Laser</span>
         <h3>H2D</h3>
         <div class="sub">Dual-Nozzle System</div>
