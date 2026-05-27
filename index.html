@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bambu Lab H2 Serie · 3DJake — Sommer-Sale −5%</title>
+<meta name="description" content="Die Bambu Lab H2 Serie auf 3DJake — H2D dual-nozzle und H2S Hochgeschwindigkeit. Jetzt im Sommer-Sale: 5% Rabatt auf die gesamte H2 Familie und das passende Zubehör." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#06a4ac;
+  --teal-deep:#125467;
+  --lime:#c1d241;
+  --ink:#1d1d1b;
+  --paper:#f6f4ee;
+  --paper-2:#ecebe4;
+  --orange:#f2950a;
+  --orange-deep:#c46b00;
+  --measure: 72rem;
+  --grid: 1px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",ui-sans-serif,sans-serif;font-feature-settings:"ss01","ss02","cv11";text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+::selection{background:var(--orange);color:var(--ink)}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace;letter-spacing:0.02em}
+.display{font-family:"Fraunces",ui-serif,serif;font-optical-sizing:auto;font-variation-settings:"SOFT" 30,"WONK" 0;letter-spacing:-0.02em;line-height:0.92}
+
+/* --- Top utility bar (matches 3DJake header pattern) --- */
+.utility{background:var(--teal-deep);color:#cfe8ea;font-size:12px}
+.utility .row{max-width:var(--measure);margin:0 auto;padding:8px 24px;display:flex;justify-content:space-between;gap:24px;align-items:center}
+.utility a{text-decoration:none;opacity:.8}
+.utility a:hover{opacity:1;color:#fff}
+.utility .left{display:flex;gap:18px;align-items:center}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(193,210,65,0.18)}
+
+/* --- Header --- */
+header.site{background:var(--paper);border-bottom:1px solid rgba(29,29,27,0.08);position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.2) blur(8px);background:rgba(246,244,238,0.86)}
+header.site .row{max-width:var(--measure);margin:0 auto;padding:18px 24px;display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center}
+header.site .logo{height:34px}
+header.site nav{display:flex;gap:28px;font-weight:500;font-size:14px;justify-content:center}
+header.site nav a{text-decoration:none;position:relative}
+header.site nav a:hover::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:2px;background:var(--teal)}
+.parent-badge{display:inline-flex;align-items:center;gap:8px;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;padding:6px 10px 6px 8px;border:1px solid rgba(29,29,27,.18);border-radius:999px;background:#fff}
+.parent-badge .smile{width:18px;height:18px;border-radius:50%;background:var(--orange);display:inline-grid;place-items:center;color:#fff;font-weight:700}
+.parent-badge .smile::after{content:"";width:10px;height:6px;border:2px solid #fff;border-top:0;border-radius:0 0 9px 9px;display:block;transform:translateY(-1px)}
+
+/* --- Sale banner --- */
+.sale-banner{background:var(--ink);color:var(--paper);overflow:hidden;position:relative}
+.sale-banner .marquee{display:flex;gap:48px;align-items:center;padding:14px 0;animation:slide 38s linear infinite;width:max-content}
+.sale-banner .marquee span{font-family:"Fraunces",serif;font-weight:600;font-size:18px;letter-spacing:.01em;white-space:nowrap;display:inline-flex;gap:18px;align-items:center}
+.sale-banner .marquee em{font-style:normal;color:var(--orange);font-weight:800;letter-spacing:-.01em}
+.sale-banner .marquee .sep{width:8px;height:8px;background:var(--lime);border-radius:50%;display:inline-block;flex:0 0 8px}
+@keyframes slide{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+
+/* --- Hero --- */
+.hero{position:relative;overflow:hidden;padding:88px 0 0}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(to right, rgba(18,84,103,.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18,84,103,.07) 1px, transparent 1px);
+  background-size:48px 48px;mask-image:radial-gradient(ellipse 80% 70% at 60% 40%, #000 60%, transparent 100%);
+  pointer-events:none}
+.hero .wrap{max-width:var(--measure);margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;min-height:560px;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--teal-deep);background:#fff;padding:8px 12px;border-radius:999px;border:1px solid rgba(18,84,103,.18);box-shadow:0 1px 0 rgba(18,84,103,.05)}
+.eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 0 rgba(242,149,10,.6);animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(242,149,10,.55)} 80%{box-shadow:0 0 0 14px rgba(242,149,10,0)} 100%{box-shadow:0 0 0 0 rgba(242,149,10,0)}}
+
+h1.title{font-family:"Fraunces",serif;font-weight:500;font-variation-settings:"SOFT" 35,"WONK" 1;font-size:clamp(56px, 9vw, 144px);line-height:.86;margin:20px 0 18px;letter-spacing:-0.035em}
+h1.title em{font-style:italic;color:var(--teal-deep);font-weight:500;display:block;font-size:.55em;letter-spacing:-0.02em;margin-top:.2em}
+h1.title .stamp{display:inline-block;transform:rotate(-6deg);background:var(--orange);color:#fff;padding:10px 18px 12px;border-radius:8px;font-family:"DM Sans",sans-serif;font-weight:800;font-size:.16em;letter-spacing:.04em;vertical-align:middle;margin:0 .2em;box-shadow:6px 6px 0 var(--ink);position:relative}
+h1.title .stamp::before{content:"SOMMER";position:absolute;top:-12px;left:14px;font-family:"JetBrains Mono",monospace;font-size:.35em;letter-spacing:.3em;color:var(--orange-deep)}
+.lead{max-width:48ch;font-size:18px;line-height:1.55;color:#2c2c2a}
+.lead strong{font-weight:700;color:var(--ink)}
+
+.cta-row{margin-top:32px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 22px;border-radius:999px;font-weight:700;font-size:15px;letter-spacing:.01em;text-decoration:none;transition:transform .15s ease, box-shadow .2s ease;border:0;cursor:pointer}
+.btn-primary{background:var(--teal);color:#fff;box-shadow:0 6px 0 var(--teal-deep)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 var(--teal-deep)}
+.btn-primary:active{transform:translateY(4px);box-shadow:0 2px 0 var(--teal-deep)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.arrow{display:inline-block;transition:transform .2s ease}
+.btn:hover .arrow{transform:translateX(4px)}
+
+.countdown{margin-top:26px;display:inline-flex;gap:6px;font-family:"JetBrains Mono",monospace}
+.countdown div{background:#fff;border:1px solid rgba(29,29,27,.1);padding:10px 12px;border-radius:8px;text-align:center;min-width:62px}
+.countdown b{display:block;font-size:22px;font-weight:700;color:var(--teal-deep)}
+.countdown small{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#666}
+
+/* --- Hero printer illustration --- */
+.printer-stage{position:relative;aspect-ratio:1/1;max-width:520px;justify-self:end}
+.printer-stage svg{width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(18,84,103,.18))}
+.spec-pin{position:absolute;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--teal-deep);background:#fff;border:1px solid rgba(18,84,103,.2);padding:6px 9px;border-radius:6px;white-space:nowrap;animation:bobUp .8s ease-out backwards}
+.spec-pin::before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--orange);border:2px solid #fff;box-shadow:0 0 0 1px var(--orange)}
+.spec-pin.p1{top:12%;left:-8%;animation-delay:.4s}.spec-pin.p1::before{left:-26px;top:8px}
+.spec-pin.p2{top:38%;right:-4%;animation-delay:.55s}.spec-pin.p2::before{right:-22px;top:8px}
+.spec-pin.p3{bottom:18%;left:0;animation-delay:.7s}.spec-pin.p3::before{left:-22px;top:8px}
+.spec-pin b{color:var(--ink)}
+@keyframes bobUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* spec ticker */
+.spec-ticker{margin-top:80px;border-top:1px solid rgba(29,29,27,.1);border-bottom:1px solid rgba(29,29,27,.1);background:var(--paper-2);overflow:hidden}
+.spec-ticker .row{display:flex;gap:64px;padding:18px 0;animation:slide 42s linear infinite;width:max-content}
+.spec-ticker .row > div{display:flex;gap:14px;align-items:baseline;white-space:nowrap}
+.spec-ticker .num{font-family:"Fraunces",serif;font-weight:600;font-size:26px;color:var(--teal-deep);font-variation-settings:"SOFT" 30}
+.spec-ticker .lbl{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#5e5e5c}
+
+/* --- Compare section --- */
+section{padding:96px 0;position:relative}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 24px}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:48px;gap:24px;flex-wrap:wrap}
+.section-head h2{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(36px,5vw,64px);margin:0;line-height:1;letter-spacing:-0.025em}
+.section-head h2 i{font-style:italic;color:var(--teal)}
+.section-head .meta{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#666}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:#fff;border:1px solid rgba(29,29,27,.1);border-radius:18px;padding:36px;position:relative;overflow:hidden;transition:transform .3s ease, box-shadow .3s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(18,84,103,.12)}
+.card .tag{position:absolute;top:18px;right:18px;font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;padding:5px 9px;border-radius:999px}
+.card.h2d{background:linear-gradient(145deg,#fff 30%,#e8f6f7 100%)}
+.card.h2d .tag{background:var(--teal);color:#fff}
+.card.h2s{background:linear-gradient(145deg,#fff 30%,#f5f7df 100%)}
+.card.h2s .tag{background:var(--lime);color:var(--ink)}
+.card h3{font-family:"Fraunces",serif;font-weight:500;font-size:48px;margin:0 0 4px;letter-spacing:-0.025em}
+.card .sub{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:24px}
+.card ul{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:10px}
+.card li{display:flex;gap:12px;align-items:start;font-size:15px;line-height:1.45}
+.card li::before{content:"";width:8px;height:8px;background:var(--orange);border-radius:2px;margin-top:8px;flex:0 0 8px;transform:rotate(45deg)}
+.card .price{display:flex;align-items:baseline;gap:12px;border-top:1px dashed rgba(29,29,27,.16);padding-top:20px;margin-top:auto}
+.price .was{font-family:"JetBrains Mono",monospace;text-decoration:line-through;color:#999;font-size:13px}
+.price .now{font-family:"Fraunces",serif;font-size:38px;font-weight:600;letter-spacing:-0.02em;color:var(--ink)}
+.price .save{margin-left:auto;background:var(--orange);color:#fff;padding:6px 10px;border-radius:8px;font-weight:700;font-size:13px;font-family:"JetBrains Mono",monospace}
+
+/* --- Features --- */
+.features{background:var(--ink);color:var(--paper);padding:120px 0;position:relative;overflow:hidden}
+.features::before{content:"H2";position:absolute;font-family:"Fraunces",serif;font-weight:300;font-size:560px;color:rgba(255,255,255,.03);right:-40px;top:-120px;letter-spacing:-0.06em;line-height:1;font-style:italic;pointer-events:none}
+.features .section-head h2{color:var(--paper)}
+.features .section-head h2 i{color:var(--lime)}
+.features .meta{color:rgba(246,244,238,.5)}
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:2}
+.feat{padding:28px 0;border-top:1.5px solid rgba(246,244,238,.18);position:relative}
+.feat .num{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.22em;color:var(--lime);margin-bottom:32px}
+.feat h4{font-family:"Fraunces",serif;font-weight:500;font-size:28px;margin:0 0 12px;letter-spacing:-0.02em;line-height:1.05}
+.feat p{font-size:14px;line-height:1.55;color:rgba(246,244,238,.78);margin:0}
+
+/* --- Accessory rail --- */
+.acc{padding:96px 0;background:linear-gradient(180deg,var(--paper) 0%,var(--paper-2) 100%)}
+.acc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.acc-card{background:#fff;border:1px solid rgba(29,29,27,.08);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:14px;transition:transform .2s ease;text-decoration:none;color:inherit}
+.acc-card:hover{transform:translateY(-3px);border-color:var(--teal)}
+.acc-thumb{aspect-ratio:1/1;background:linear-gradient(135deg,#f6f4ee,#e8f6f7);border-radius:10px;display:grid;place-items:center;position:relative;overflow:hidden}
+.acc-thumb svg{width:60%;height:60%}
+.acc-thumb::after{content:"−5%";position:absolute;top:10px;right:10px;background:var(--orange);color:#fff;font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;padding:4px 7px;border-radius:6px}
+.acc-card h5{font-family:"Fraunces",serif;font-size:18px;font-weight:500;margin:0;letter-spacing:-0.01em;line-height:1.2}
+.acc-card .price-row{display:flex;justify-content:space-between;align-items:baseline;margin-top:auto}
+.acc-card .now-p{font-family:"JetBrains Mono",monospace;font-weight:700;color:var(--teal-deep)}
+.acc-card .was-p{font-family:"JetBrains Mono",monospace;color:#999;text-decoration:line-through;font-size:12px}
+
+/* --- CTA --- */
+.cta{padding:120px 0;text-align:center;background:var(--paper);position:relative;overflow:hidden}
+.cta .ring{position:absolute;border:1.5px solid rgba(18,84,103,.12);border-radius:50%;pointer-events:none}
+.cta .ring.r1{width:740px;height:740px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.cta .ring.r2{width:540px;height:540px;top:50%;left:50%;transform:translate(-50%,-50%);border-color:rgba(242,149,10,.16)}
+.cta .ring.r3{width:340px;height:340px;top:50%;left:50%;transform:translate(-50%,-50%);border-color:rgba(193,210,65,.3)}
+.cta h2{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(40px,6vw,84px);letter-spacing:-0.03em;line-height:.95;margin:0 auto 22px;max-width:14ch;position:relative}
+.cta h2 em{font-style:italic;color:var(--orange)}
+.cta p{position:relative;max-width:48ch;margin:0 auto 36px;font-size:17px;line-height:1.55;color:#3a3a38}
+.signup{display:flex;gap:8px;max-width:480px;margin:0 auto;background:#fff;padding:6px;border-radius:999px;border:1px solid rgba(29,29,27,.12);box-shadow:0 8px 30px rgba(18,84,103,.08);position:relative}
+.signup input{flex:1;border:0;outline:0;padding:14px 18px;font:inherit;background:transparent;font-size:15px}
+.signup button{border:0;background:var(--ink);color:var(--paper);padding:14px 22px;border-radius:999px;font-weight:700;cursor:pointer;font-size:14px}
+.signup button:hover{background:var(--teal-deep)}
+
+/* --- Footer --- */
+footer{background:var(--teal-deep);color:#cfe8ea;padding:64px 0 32px;position:relative}
+footer .row{max-width:var(--measure);margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+footer h6{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6);margin:0 0 14px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+footer a{text-decoration:none;font-size:14px;color:#cfe8ea;opacity:.85}
+footer a:hover{opacity:1;color:#fff}
+footer .logo{height:32px;margin-bottom:16px;filter:brightness(0) invert(1)}
+footer .corp{display:flex;gap:14px;align-items:center;margin-top:18px;font-size:13px;opacity:.85}
+footer .corp .smile{width:22px;height:22px;background:var(--orange);border-radius:50%;display:inline-grid;place-items:center}
+footer .corp .smile::after{content:"";width:12px;height:7px;border:2px solid #fff;border-top:0;border-radius:0 0 9px 9px;display:block;transform:translateY(-1px)}
+footer .legal{max-width:var(--measure);margin:48px auto 0;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.55);gap:24px;flex-wrap:wrap}
+footer .legal a{color:rgba(255,255,255,.7)}
+
+/* --- Responsive --- */
+@media (max-width: 900px){
+  .hero .wrap{grid-template-columns:1fr;gap:32px;padding-top:32px}
+  .printer-stage{justify-self:start;max-width:400px;margin-top:24px}
+  .compare{grid-template-columns:1fr}
+  .feat-grid{grid-template-columns:repeat(2,1fr)}
+  .acc-grid{grid-template-columns:repeat(2,1fr)}
+  footer .row{grid-template-columns:1fr 1fr;gap:32px}
+  header.site .row{grid-template-columns:auto auto;gap:16px}
+  header.site nav{display:none}
+  h1.title{font-size:clamp(48px,12vw,80px)}
+}
+
+/* reveal */
+[data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .8s ease, transform .8s ease}
+[data-reveal].in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- 1. Utility bar -->
+<div class="utility">
+  <div class="row">
+    <div class="left">
+      <span><span class="dot"></span> Sommer-Sale läuft · −5% auf die H2 Familie</span>
+      <span class="mono">DE · EUR ·  inkl. MwSt.</span>
+    </div>
+    <div>
+      <a href="#">Hilfe</a> &nbsp; <a href="#">Kontakt</a> &nbsp; <a href="#">Anmelden</a>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Header -->
+<header class="site">
+  <div class="row">
+    <a href="#" aria-label="3DJake International home"><img class="logo" src="assets/3djake-logo.svg" alt="3DJake International"></a>
+    <nav>
+      <a href="#h2">H2 Serie</a>
+      <a href="#vergleich">Vergleich</a>
+      <a href="#features">Technik</a>
+      <a href="#zubehör">Zubehör</a>
+      <a href="#cta">Vormerken</a>
+    </nav>
+    <span class="parent-badge"><span class="smile" aria-hidden="true"></span> Teil von niceshops</span>
+  </div>
+</header>
+
+<!-- 3. Sale marquee -->
+<div class="sale-banner" id="h2">
+  <div class="marquee" aria-hidden="true">
+    <span>Sommer-Sale 2026 <span class="sep"></span> H2 Familie <em>−5%</em> <span class="sep"></span> H2D Dual-Nozzle <span class="sep"></span> H2S 1000 mm/s <span class="sep"></span> AMS Combo inklusive <span class="sep"></span></span>
+    <span>Sommer-Sale 2026 <span class="sep"></span> H2 Familie <em>−5%</em> <span class="sep"></span> H2D Dual-Nozzle <span class="sep"></span> H2S 1000 mm/s <span class="sep"></span> AMS Combo inklusive <span class="sep"></span></span>
+  </div>
+</div>
+
+<!-- 4. Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" data-reveal><span class="pulse"></span> Vorbestellung · Sommer-Drop</span>
+      <h1 class="title" data-reveal>
+        H2<br>Serie<span class="stamp">−5%</span>
+        <em>industrieller Druck. werkstatttauglich.</em>
+      </h1>
+      <p class="lead" data-reveal>
+        Die neue <strong>Bambu Lab H2 Familie</strong> auf 3DJake — der <strong>H2D</strong> mit Doppelextruder und optionalem 10 W / 40 W Lasermodul, der <strong>H2S</strong> als reine Druckmaschine mit bis zu 1000 mm/s. Beide mit DynaSense Servomotoren, Vision-Encoder und beheizter Kammer. Nur diesen Sommer: <strong>5% Rabatt</strong> auf die gesamte H2 Linie.
+      </p>
+      <div class="cta-row" data-reveal>
+        <a class="btn btn-primary" href="#cta">Jetzt vormerken <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="#vergleich">H2D vs H2S</a>
+      </div>
+      <div class="countdown" id="cd" aria-label="Sommer-Sale Countdown">
+        <div><b id="cdD">06</b><small>Tage</small></div>
+        <div><b id="cdH">12</b><small>Std</small></div>
+        <div><b id="cdM">44</b><small>Min</small></div>
+        <div><b id="cdS">08</b><small>Sek</small></div>
+      </div>
+    </div>
+
+    <div class="printer-stage" data-reveal>
+      <!-- SVG printer (technical illustration, on-brand teal/orange) -->
+      <svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bambu Lab H2 Stilisierung">
+        <defs>
+          <linearGradient id="bodyG" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#fff"/>
+            <stop offset="100%" stop-color="#e5edee"/>
+          </linearGradient>
+          <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#06a4ac" stop-opacity=".18"/>
+            <stop offset="100%" stop-color="#125467" stop-opacity=".35"/>
+          </linearGradient>
+          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M0 0H20" stroke="#125467" stroke-opacity=".08" stroke-width="1"/>
+            <path d="M0 0V20" stroke="#125467" stroke-opacity=".08" stroke-width="1"/>
+          </pattern>
+        </defs>
+
+        <!-- shadow -->
+        <ellipse cx="260" cy="478" rx="180" ry="14" fill="#125467" opacity=".18"/>
+
+        <!-- outer frame -->
+        <rect x="80" y="90" width="360" height="370" rx="22" fill="url(#bodyG)" stroke="#1d1d1b" stroke-width="2"/>
+
+        <!-- top panel -->
+        <rect x="80" y="90" width="360" height="58" rx="22" fill="#1d1d1b"/>
+        <text x="100" y="125" fill="#f6f4ee" font-family="JetBrains Mono, monospace" font-size="14" font-weight="700" letter-spacing="3">BAMBU LAB H2</text>
+        <circle cx="410" cy="119" r="6" fill="#c1d241"/>
+        <circle cx="395" cy="119" r="3" fill="#06a4ac"/>
+        <circle cx="385" cy="119" r="3" fill="#f2950a"/>
+
+        <!-- glass door -->
+        <rect x="100" y="160" width="320" height="260" rx="10" fill="url(#glass)" stroke="#125467" stroke-opacity=".4" stroke-width="1.4"/>
+        <rect x="100" y="160" width="320" height="260" rx="10" fill="url(#grid)" opacity=".4"/>
+
+        <!-- gantry rail -->
+        <line x1="120" y1="200" x2="400" y2="200" stroke="#1d1d1b" stroke-width="3"/>
+        <line x1="120" y1="200" x2="120" y2="420" stroke="#1d1d1b" stroke-width="2" stroke-dasharray="3 4" stroke-opacity=".5"/>
+        <line x1="400" y1="200" x2="400" y2="420" stroke="#1d1d1b" stroke-width="2" stroke-dasharray="3 4" stroke-opacity=".5"/>
+
+        <!-- toolhead (dual nozzle) -->
+        <g transform="translate(220 200)">
+          <rect x="0" y="0" width="80" height="40" rx="6" fill="#1d1d1b"/>
+          <rect x="2" y="2" width="76" height="20" rx="4" fill="#06a4ac"/>
+          <!-- two nozzles for H2D -->
+          <rect x="14" y="40" width="14" height="22" rx="2" fill="#125467"/>
+          <rect x="52" y="40" width="14" height="22" rx="2" fill="#f2950a"/>
+          <polygon points="14,62 28,62 21,72" fill="#125467"/>
+          <polygon points="52,62 66,62 59,72" fill="#f2950a"/>
+        </g>
+
+        <!-- build plate -->
+        <rect x="140" y="380" width="240" height="22" rx="3" fill="#1d1d1b"/>
+        <rect x="140" y="380" width="240" height="6" fill="#f2950a" opacity=".9"/>
+        <!-- print on plate: niceshops smiley silhouette -->
+        <g transform="translate(248 332)">
+          <circle r="22" fill="#f2950a"/>
+          <circle cx="-7" cy="-4" r="2" fill="#fff"/>
+          <circle cx="7" cy="-4" r="2" fill="#fff"/>
+          <path d="M -10 4 Q 0 14 10 4" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </g>
+
+        <!-- side AMS hint -->
+        <rect x="440" y="240" width="44" height="120" rx="6" fill="#1d1d1b"/>
+        <circle cx="462" cy="265" r="8" fill="#06a4ac"/>
+        <circle cx="462" cy="290" r="8" fill="#c1d241"/>
+        <circle cx="462" cy="315" r="8" fill="#f2950a"/>
+        <circle cx="462" cy="340" r="8" fill="#125467"/>
+
+        <!-- base feet -->
+        <rect x="100" y="460" width="60" height="14" rx="4" fill="#1d1d1b"/>
+        <rect x="360" y="460" width="60" height="14" rx="4" fill="#1d1d1b"/>
+
+        <!-- crosshair marks -->
+        <g stroke="#f2950a" stroke-width="1.5" opacity=".7">
+          <line x1="60" y1="60" x2="80" y2="60"/>
+          <line x1="60" y1="60" x2="60" y2="80"/>
+          <line x1="440" y1="60" x2="460" y2="60"/>
+          <line x1="460" y1="60" x2="460" y2="80"/>
+          <line x1="60" y1="460" x2="60" y2="480"/>
+          <line x1="60" y1="480" x2="80" y2="480"/>
+          <line x1="460" y1="460" x2="460" y2="480"/>
+          <line x1="440" y1="480" x2="460" y2="480"/>
+        </g>
+      </svg>
+
+      <div class="spec-pin p1"><b>350 × 320 × 325</b> Bauraum mm</div>
+      <div class="spec-pin p2"><b>1000 mm/s</b> max. Druck</div>
+      <div class="spec-pin p3"><b>65 °C</b> Aktiv-Kammer</div>
+    </div>
+  </div>
+
+  <!-- ticker -->
+  <div class="spec-ticker" aria-hidden="true">
+    <div class="row">
+      <div><span class="num">350°C</span><span class="lbl">Hotend max</span></div>
+      <div><span class="num">20 kHz</span><span class="lbl">Extrusion control</span></div>
+      <div><span class="num">&lt;50 µm</span><span class="lbl">Vision encoder</span></div>
+      <div><span class="num">220%</span><span class="lbl">mehr Bauraum vs X1C</span></div>
+      <div><span class="num">10 / 40 W</span><span class="lbl">Laser optional (H2D)</span></div>
+      <div><span class="num">DynaSense</span><span class="lbl">PMSM servo</span></div>
+      <div><span class="num">350°C</span><span class="lbl">Hotend max</span></div>
+      <div><span class="num">20 kHz</span><span class="lbl">Extrusion control</span></div>
+      <div><span class="num">&lt;50 µm</span><span class="lbl">Vision encoder</span></div>
+      <div><span class="num">220%</span><span class="lbl">mehr Bauraum vs X1C</span></div>
+      <div><span class="num">10 / 40 W</span><span class="lbl">Laser optional (H2D)</span></div>
+      <div><span class="num">DynaSense</span><span class="lbl">PMSM servo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Compare -->
+<section id="vergleich">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <h2>H2D <i>oder</i> H2S<br>— deine Werkstatt entscheidet.</h2>
+      <div class="meta">02 · Modell-Vergleich</div>
+    </div>
+
+    <div class="compare">
+      <div class="card h2d" data-reveal>
+        <span class="tag">Multimaterial · Laser</span>
+        <h3>H2D</h3>
+        <div class="sub">Dual-Nozzle System</div>
+        <ul>
+          <li><strong>350 × 320 × 325 mm</strong> Bauraum — der größte Bambu-Desktop bisher</li>
+          <li><strong>Zweiter Nozzle</strong> permanent für Stützmaterial → drastisch weniger Filament-Abfall</li>
+          <li><strong>Lasermodul</strong> optional als 10 W oder 40 W Aufrüstung — Drucken & Schneiden in einer Maschine</li>
+          <li><strong>65 °C aktive Kammer</strong> + 350 °C Hotend für PA, PPS-CF, PEEK</li>
+        </ul>
+        <div class="price">
+          <span class="was">€ 2.199</span>
+          <span class="now">€ 2.089</span>
+          <span class="save">−5% Sommer</span>
+        </div>
+      </div>
+
+      <div class="card h2s" data-reveal>
+        <span class="tag">Pure Speed · AMS Combo</span>
+        <h3>H2S</h3>
+        <div class="sub">Single-Nozzle · 1000 mm/s</div>
+        <ul>
+          <li><strong>340 × 320 × 340 mm</strong> Bauraum mit zusätzlicher Höhe</li>
+          <li><strong>1000 mm/s</strong> mit DynaSense Servo + Vision-Encoder (Sub-50 µm)</li>
+          <li><strong>AMS Combo</strong> ab Werk — Multi-Color out of the box</li>
+          <li><strong>Reine Druckmaschine</strong> — kein Laser, dafür voll auf 3D-Druckspeed getrimmt</li>
+        </ul>
+        <div class="price">
+          <span class="was">€ 1.699</span>
+          <span class="now">€ 1.614</span>
+          <span class="save">−5% Sommer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Features -->
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <h2>Warum die H2 <i>anders</i> druckt.</h2>
+      <div class="meta">03 · Engineering</div>
+    </div>
+
+    <div class="feat-grid">
+      <div class="feat" data-reveal>
+        <div class="num">01 / Antrieb</div>
+        <h4>DynaSense PMSM Servo</h4>
+        <p>Permanent-Magnet-Synchronmotoren mit echtem Closed-Loop. Kein Schrittverlust mehr, auch bei aggressiven Beschleunigungen.</p>
+      </div>
+      <div class="feat" data-reveal>
+        <div class="num">02 / Genauigkeit</div>
+        <h4>Vision Encoder</h4>
+        <p>Optisches Lagefeedback unter 50 Mikrometer. Jeder Layer sitzt, jeder Outline-Pass deckt sich.</p>
+      </div>
+      <div class="feat" data-reveal>
+        <div class="num">03 / Thermik</div>
+        <h4>Beheizte Kammer 65°C</h4>
+        <p>Technische Materialien wie PPS-CF, PA-CF und ABS ohne Warping. 350°C Hotend macht den Rest.</p>
+      </div>
+      <div class="feat" data-reveal>
+        <div class="num">04 / Workflow</div>
+        <h4>3DJake Express</h4>
+        <p>Versand aus dem niceshops Logistikzentrum Saaz. Mit Druckerseriennummer registrieren → 5% Filament-Voucher on top.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Accessory rail -->
+<section class="acc" id="zubehör">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <h2>Passendes <i>Zubehör</i> mit −5%</h2>
+      <div class="meta">04 · H2 / P2 Series Parts auf 3DJake</div>
+    </div>
+
+    <div class="acc-grid">
+      <a class="acc-card" href="https://www.3djake.com/bambu-lab/hotend-h2-p2-series" target="_blank" rel="noopener" data-reveal>
+        <div class="acc-thumb">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="38" y="14" width="24" height="38" rx="3" fill="#125467"/><rect x="36" y="50" width="28" height="14" rx="2" fill="#1d1d1b"/><polygon points="40,64 60,64 50,86" fill="#f2950a"/></svg>
+        </div>
+        <h5>Bambu Lab Hotend · H2/P2 Serie</h5>
+        <div class="price-row"><span class="now-p">€ 18,83</span><span class="was-p">€ 19,82</span></div>
+      </a>
+      <a class="acc-card" href="https://www.3djake.com/bambu-lab/4-in-1-ptfe-adapter" target="_blank" rel="noopener" data-reveal>
+        <div class="acc-thumb">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 12 Q50 50 78 78" stroke="#06a4ac" stroke-width="4" fill="none"/><path d="M50 12 Q50 50 22 78" stroke="#06a4ac" stroke-width="4" fill="none"/><path d="M50 12 Q50 50 50 88" stroke="#06a4ac" stroke-width="4" fill="none"/><circle cx="50" cy="12" r="6" fill="#1d1d1b"/></svg>
+        </div>
+        <h5>4-in-1 PTFE Adapter · H2D/H2S/P2S</h5>
+        <div class="price-row"><span class="now-p">€ 14,21</span><span class="was-p">€ 14,96</span></div>
+      </a>
+      <a class="acc-card" href="https://www.3djake.com/bambu-lab/high-flow-tungsten-carbide-nozzle-h2-p2s" target="_blank" rel="noopener" data-reveal>
+        <div class="acc-thumb">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="38,22 62,22 56,76 44,76" fill="#1d1d1b"/><polygon points="44,76 56,76 50,90" fill="#c1d241"/><rect x="36" y="18" width="28" height="6" fill="#125467"/></svg>
+        </div>
+        <h5>High Flow Tungsten Carbide Nozzle</h5>
+        <div class="price-row"><span class="now-p">€ 36,09</span><span class="was-p">€ 37,99</span></div>
+      </a>
+      <a class="acc-card" href="https://www.3djake.com/e3d/diamondback-hotend-for-bambu-lab-h2d-h2c-h2s-p2s" target="_blank" rel="noopener" data-reveal>
+        <div class="acc-thumb">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon points="50,18 78,40 50,82 22,40" fill="#06a4ac"/><polygon points="50,18 78,40 50,40" fill="#125467"/><polygon points="50,82 78,40 50,40" fill="#0d7a80"/></svg>
+        </div>
+        <h5>E3D DiamondBack · H2D/H2C/H2S/P2S</h5>
+        <div class="price-row"><span class="now-p">€ 113,99</span><span class="was-p">€ 119,99</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CTA -->
+<section class="cta" id="cta">
+  <div class="ring r1"></div>
+  <div class="ring r2"></div>
+  <div class="ring r3"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <h2 data-reveal>Werd' <em>zuerst</em> beliefert.<br>Sommer-Sale endet bald.</h2>
+    <p data-reveal>Trag dich ein und du bekommst zur Auslieferung deinen 5%-Code, dazu ein 100&nbsp;m PLA-Probierpaket aus dem 3DJake Lager.</p>
+    <form class="signup" data-reveal onsubmit="event.preventDefault(); this.querySelector('button').textContent='Gemerkt ✓'; this.querySelector('button').disabled=true;">
+      <input type="email" required placeholder="deine@werkstatt.email" aria-label="E-Mail">
+      <button type="submit">Vormerken</button>
+    </form>
+    <p class="mono" style="margin-top:24px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.5">— Versand ab KW 28 · solange Vorrat reicht · −5% gilt nur online auf 3djake.com</p>
+  </div>
+</section>
+
+<!-- 9. Footer -->
+<footer>
+  <div class="row">
+    <div>
+      <img class="logo" src="assets/3djake-logo.svg" alt="3DJake International">
+      <div style="font-size:13px;opacity:.85;max-width:32ch">because makers know what makers need — 3DJake International, der Maker-Shop aus dem Hause niceshops.</div>
+      <div class="corp"><span class="smile"></span> Ein niceshops Unternehmen · Saaz, Österreich</div>
+    </div>
+    <div>
+      <h6>Sortiment</h6>
+      <ul><li><a href="#">3D-Drucker</a></li><li><a href="#">Filamente</a></li><li><a href="#">Resin</a></li><li><a href="#">Zubehör</a></li></ul>
+    </div>
+    <div>
+      <h6>Service</h6>
+      <ul><li><a href="#">Hilfe-Center</a></li><li><a href="#">Versand</a></li><li><a href="#">Retoure</a></li><li><a href="#">Kontakt</a></li></ul>
+    </div>
+    <div>
+      <h6>Unternehmen</h6>
+      <ul><li><a href="https://www.niceshops.com" target="_blank" rel="noopener">niceshops.com</a></li><li><a href="#">Karriere</a></li><li><a href="#">Presse</a></li><li><a href="#">Magazin</a></li></ul>
+    </div>
+  </div>
+  <div class="legal">
+    <span>© 2026 niceshops GmbH · Saaz 99, A-8341 Paldau · FN 350 388 d</span>
+    <span><a href="#">Impressum</a> &middot; <a href="#">Datenschutz</a> &middot; <a href="#">AGB</a></span>
+  </div>
+</footer>
+
+<script>
+// Countdown to a sale end (7 days from page load, demo only)
+const target = Date.now() + (6*24*3600 + 12*3600 + 44*60 + 8)*1000;
+function tick(){
+  const d = target - Date.now();
+  if (d<=0) return;
+  const D = Math.floor(d/86400000), H = Math.floor(d/3600000)%24, M = Math.floor(d/60000)%60, S = Math.floor(d/1000)%60;
+  cdD.textContent = String(D).padStart(2,'0');
+  cdH.textContent = String(H).padStart(2,'0');
+  cdM.textContent = String(M).padStart(2,'0');
+  cdS.textContent = String(S).padStart(2,'0');
+}
+tick(); setInterval(tick, 1000);
+
+// Reveal-on-scroll
+const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('in')), {threshold:.12});
+document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
