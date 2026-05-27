@@ -445,6 +445,33 @@ html.no-js [data-reveal], body.force-show [data-reveal]{opacity:1;transform:none
   </div>
 </section>
 
+<!-- 4c. Cult trailer video -->
+<section class="trailer">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <h2>Achtung — &nbsp;<i>"The Not Printing So Bad"</i></h2>
+      <div class="meta">Trailer · 4 Sek · Veo 3.1</div>
+    </div>
+    <div class="video-frame" data-reveal>
+      <video src="assets/notprintingsobad.mp4" autoplay loop muted playsinline controls poster=""></video>
+      <div class="film-grain" aria-hidden="true"></div>
+    </div>
+    <p class="caption">Roland &amp; Christoph in gelben Hazmat-Anzügen — ein 3DJake Werkstatt-Krimi mit der Bambu Lab H2 Serie. <em>Diesmal wird gedruckt, nicht gekocht.</em></p>
+  </div>
+</section>
+<style>
+.trailer{padding:96px 0;background:#0e0d09;color:#f4d63b;position:relative;overflow:hidden}
+.trailer::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%, rgba(244,214,59,.08), transparent 60%);pointer-events:none}
+.trailer .section-head h2{color:#f4d63b}
+.trailer .section-head h2 i{color:#fff;font-style:italic;font-weight:500;background:#f4d63b;color:#0e0d09;padding:0 14px;border-radius:6px;display:inline-block;transform:rotate(-2deg)}
+.trailer .meta{color:#9a8e4d}
+.video-frame{position:relative;aspect-ratio:16/9;max-width:920px;margin:0 auto;border:6px solid #f4d63b;border-radius:6px;overflow:hidden;box-shadow:0 30px 70px -10px rgba(244,214,59,.25), 0 0 0 12px #0e0d09, 0 0 0 13px #f4d63b}
+.video-frame video{width:100%;height:100%;display:block;object-fit:cover}
+.film-grain{position:absolute;inset:0;pointer-events:none;mix-blend-mode:overlay;opacity:.35;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/></svg>")}
+.trailer .caption{text-align:center;margin:28px auto 0;max-width:60ch;color:#c9bd76;font-family:"Fraunces",serif;font-size:18px;line-height:1.5}
+.trailer .caption em{color:#f4d63b;font-style:italic}
+</style>
+
 <!-- 5. Compare -->
 <section id="vergleich">
   <div class="wrap">
